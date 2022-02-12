@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dongle:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Comforter', cursive;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Comforter', cursive;
+    font-size: 2rem;
+    /* background-color: rgba(0,0,0,0.5); */
+}
+
+button{
+    background-color: rebeccapurple;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+}
+
+.popup-container{
+    position: fixed;
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-container.active{
+    display: flex;
+}
+
+.popup{
+    width: 400px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    position: relative;
+    padding:2rem;
+}
+
+.popup button{
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+
+
